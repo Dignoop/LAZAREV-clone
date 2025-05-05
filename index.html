@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LAZAREV. 🪀 — Digital Product Design Agency | Award Winning UX & UI Agency</title>
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+  </head>
+  <body class="h-full w-full text-white bg-white overflow-x-hidden">
+    <!-- NAVBAR -->
+    <nav
+      class="lg:h-[15vh] h-[9vh] bg-[#111] lg:px-[13vh] px-[3vh]  overflow-x-hidden flex justify-between items-center w-[100vw] lg:w-full fixed top-0 z-50"
+    >
+      <h2 class="font-bold text-[25px] lg:text-[4vh] text-white">LAZAREV.</h2>
+
+      <!-- HOVER TRIGGER (peer) -->
+     <div class="navdiv lg:flex hidden">
+      <div
+      class="names flex gap-[18px] text-[16px] text-white peer cursor-pointer"
+    >
+      <h4>Case Study</h4>
+      <h4>Area of Expertise</h4>
+      <h4>UI/UX Design</h4>
+      <h4>Design Process</h4>
+      <h4>About Agency</h4>
+      <h4>Product Design</h4>
+    </div>
+     </div>
+
+      <button class="bg-[#0BA34B] hidden lg:flex h-[35px] justify-center items-center rounded-[20px] w-[120px] text-white">
+        Let's Talk <i class="ri-pencil-fill text-white"></i>
+      </button>
+
+      <div class="navhidden lg:hidden flex">
+        <i id="ham" class="ri-menu-line text-[30px]"></i>
+        
+      </div>
+    </nav>
+    <div class="info-nav ml-[100vw] fixed top-[0%] right-[0%] z-9999 px-[9vw] py-[9vw] text-[25px] flex lg:hidden flex-col gap-[10px] h-full w-[100%] bg-[#111]">
+      <details class="cursor-pointer">
+        <summary class="list-none"><h4>Case Study </h4></summary>
+        <div class="names text-[#878787] text-[16px]">
+          <h5 class="mb-[8px] hover:text-white">
+            <span  id="span">AI & ML</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">FinTech</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">Real Estate</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">E-commerce</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white"><span id="span">Web-3</span></h5>
+        </div>
+      </details>
+      <details class="cursor-pointer">
+        <summary class="list-none"><h4>Area of Expertise </h4></summary>
+        <div class="names text-[#878787]  text-[16px]">
+          
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">E-commerce</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white"><span id="span">Web-3</span></h5>
+        </div>
+      </details><details class="cursor-pointer">
+        <summary class="list-none"><h4>UI/UX Design</h4></summary>
+        <div class="names text-[#878787]  text-[16px]">
+          <h5 class="mb-[8px] hover:text-white">
+            <span  id="span">AI & ML</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">FinTech</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">Real Estate</span>
+          </h5>
+         
+        </div>
+      </details><details class="cursor-pointer">
+        <summary class="list-none"><h4>Design Process</h4></summary>
+        <div class="names text-[#878787]  text-[16px]">
+          <h5 class="mb-[8px] hover:text-white">
+            <span  id="span">AI & ML</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">FinTech</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">Real Estate</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">E-commerce</span>
+          </h5>
+          
+        </div>
+      </details><details class="cursor-pointer">
+        <summary class="list-none"><h4>Product design </h4></summary>
+        <div class="names text-[#878787]  text-[16px]">
+          <h5 class="mb-[8px] hover:text-white">
+            <span  id="span">AI & ML</span>
+          </h5>
+          
+        </div>
+      </details>
+      <details class="cursor-pointer">
+        <summary class="list-none"><h4>About Agency </h4></summary>
+        <div class="names text-[#878787]  text-[20px]">
+          <h5 class="mb-[8px] hover:text-white">
+            <span  id="span">AI & ML</span>
+          </h5>
+          <h5 class="mb-[8px] hover:text-white">
+            <span id="span">FinTech</span>
+          </h5>
+          
+        </div>
+        
+      </details>
+      <i id="close" class="ri-close-large-line absolute top-4 right-8 bg-white text-black p-[10px] py-[6px] rounded-[50%]"></i>
+    </div>
+    <!-- NAV BOTTOM DROPDOWN -->
+    <div
+      class="nav-bottom lg:flex hidden absolute text-[14px] font-semibold top-[15vh] h-[0%] pl-[56vh] gap-[40px] left-0 w-full bg-[#111] overflow-hidden text-[#6f6f6f]  z-40 border-b border-white"
+    >
+      <div class="names">
+        <h5 class="hover:text-white"><span>Case Studies</span></h5>
+      </div>
+      <div class="names">
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">AI & ML</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">FinTech</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">Real Estate</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">E-commerce</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white"><span id="span">Web-3</span></h5>
+      </div>
+      <div class="names">
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">AI & ML</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">FinTech</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">Real Estate</span>
+        </h5>
+      </div>
+      <div class="names">
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">AI & ML</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">FinTech</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">Real Estate</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">E-commerce</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white"><span id="span">Web-3</span></h5>
+      </div>
+      <div class="names">
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">AI & ML</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">FinTech</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">Real Estate</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">E-commerce</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white"><span id="span">Web-3</span></h5>
+      </div>
+      <div class="names">
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">AI & ML</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white">
+          <span id="span">E-commerce</span>
+        </h5>
+        <h5 class="mb-[8px] hover:text-white"><span id="span">Web-3</span></h5>
+      </div>
+    </div>
+
+    <div class="main">
+      <div
+        class="page1 lg:h-[100vh] h-[100vh] w-[100vw] bg-[#111] flex relative flex-col lg:top-0 top-16  lg:justify-center items-center text-[5vh] lg:text-[14vh] "
+      >
+        <h1 class="lg:h-[13vh] h-[8vh] flex font-bold items-center">
+          AI & ML PR<span
+            ><svg
+              class="lg:w-[10vh] lg:h-[10vh] h-[5vh] w-[5vh] flex justify-center items-center rounded-[50%] bg-[#0BA34B]"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                class="scale-[0.9] text-center"
+                d="M12.8995 6.85453L17.1421 11.0972L7.24264 20.9967H3V16.754L12.8995 6.85453ZM14.3137 5.44032L16.435 3.319C16.8256 2.92848 17.4587 2.92848 17.8492 3.319L20.6777 6.14743C21.0682 6.53795 21.0682 7.17112 20.6777 7.56164L18.5563 9.68296L14.3137 5.44032Z"
+              ></path></svg></span
+          >DUCT
+        </h1>
+        <h1 class="font-bold">DESIGN AGENCY</h1>
+        <h4 class="lg:text-[19px] text-[12px] font-medium lg:w-[40vw] w-[60vw] text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
+          eveniet. Odit natus illo harum explicabo?
+        </h4>
+        <div
+          class="btn lg:text-[15px] text-[10px] font-medium flex gap-[10px] pt-[15px] text-center justify-center items-center"
+        >
+          <h4 class="border-[2px] rounded-[20px] p-[8px]">brand design</h4>
+          <h4 class="border-[2px] rounded-[20px] p-[8px]">user experiance</h4>
+          <h4>and</h4>
+          <h4 class="border-[2px] rounded-[20px] p-[8px]">
+            digital product design
+          </h4>
+        </div>
+        <div class=" lg:hidden mt-[50px] px-[10px] ">
+          
+          <img class="image12  rounded-[15px]" src="assets/img2" alt="">
+          <video
+          class="video12 absolute  scale-0 top-66 right-[1px] rounded-[15px]   "
+          src="assets/vid2.mp4"
+        ></video>
+        </div>
+        <div
+          class="bottom-imgs flex gap absolute lg:bottom-2 bottom-32 lg:w-[44%] w-[75%] gap-[547px] mt-[10vh]"
+        >
+          <div class="w-full overflow-hidden">
+            <div class="flex slider-track gap-[20px]">
+              <img
+                src="https://lazarev.kiev.ua/la24/forbes.svg"
+                class="w-[50px] h-auto flex-shrink-0"
+                alt=""
+              />
+              <img
+                src="https://lazarev.kiev.ua/la24/adweek.svg"
+                class="w-[50px] h-auto flex-shrink-0"
+                alt=""
+              />
+              <img
+                src="https://lazarev.kiev.ua/la24/pmi.svg"
+                class="w-[50px] h-auto flex-shrink-0"
+                alt=""
+              />
+              <img
+                src="https://lazarev.kiev.ua/la24/wf.svg"
+                class="w-[50px] h-auto flex-shrink-0"
+                alt=""
+              />
+              <img
+                src="https://lazarev.kiev.ua/la24/adweek.svg"
+                class="w-[50px] h-auto flex-shrink-0"
+                alt=""
+              />
+              <img
+                src="https://lazarev.kiev.ua/la24/rd.svg"
+                class="w-[50px] h-auto flex-shrink-0"
+                alt=""
+              />
+              <img
+                src="https://lazarev.kiev.ua/la24/pmi.svg"
+                class="w-[50px] h-auto flex-shrink-0"
+                alt=""
+              />
+              <img
+                src="https://lazarev.kiev.ua/la24/webby.svg"
+                class="w-50px] h-auto flex-shrink-0"
+                alt=""
+              />
+              <!-- You can add more images here -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="page2 bg-[#111] relative h-[90vh] w-full  flex flex-col lg:flex-row border-t border-[#5e5e5e] gap:[60vh] lg:gap-[2vw] py:0  lg:py-[2vw] px-[4vh] lg:px-[11vh]"
+      >
+        <div class="left lg:h-full h-[30%] w-[50%] lg:w-[50%] pt-[4vw] pl-[2vw]">
+          <p class="lg:w-[20vw] w-[70vw]  h-[60%]">
+            Exclusive content due to UI/UX and Production Design
+          </p>
+          <p class="w-[70vw]  ">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque
+            ducimus, dolore dolorum natus molestias doloremque mollitia esse. Ut
+            fugit eveniet asperiores consequuntur quod doloribus?
+          </p>
+        </div>
+        <div class="right mt-[10vh] min-h-[100vh] lg:h-full w-[100%] lg:w-[50%] relative pt-[2vw] pl-[2vw] pr-[1vw]">
+          <div id="card" class="card flex items-center mt-[4px] mb-[4vw]">
+            <h2 class="lg:text-[22px] text-[15px]">
+              How to Design An AI InterFace Users will <br />Trust in 2024?
+            </h2>
+            <img
+              class="lg:h-[6vw] lg:w-[6vw] h-[10vw] w-[10vw] rounded-[50%] absolute object-cover opacity-0"
+              src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+              alt=""
+            />
+            <p class="absolute right-8 lg:top-0 top-[5vh]  text-[14px] text-[#606060]">5 min ago</p>
+            <i class="ri-arrow-right-up-line absolute right-0 text-[22px]"></i>
+          </div>
+          <div
+            id="card"
+            class="card flex items-center mb-[4vw] border-t border-[#606060] pt-[7px]"
+          >
+            <h2 class="lg:text-[22px] text-[15px]">
+              How to Design An AI InterFace Users will <br />Trust in 2024?
+            </h2>
+            <img
+              class="h-[6vw] w-[6vw] rounded-[50%] absolute object-cover opacity-0"
+              src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+              alt=""
+            />
+            <p class="absolute right-8 lg:top-0 top-[14vh] text-[14px] text-[#606060]">5 min ago</p>
+            <i class="ri-arrow-right-up-line absolute right-0 text-[22px]"></i>
+          </div>
+          <div
+            id="card"
+            class="card flex items-center mb-[4vw] border-t border-[#606060] pt-[7px]"
+          >
+            <h2 class="lg:text-[22px] text-[15px]">
+              How to Design An AI InterFace Users will <br />Trust in 2024?
+            </h2>
+            <img
+              class="h-[6vw] w-[6vw] rounded-[50%] absolute object-cover opacity-0"
+              src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+              alt=""
+            />
+            <p class="absolute right-8 lg:top-0 top-[23vh]   text-[14px] text-[#606060]">5 min ago</p>
+            <i class="ri-arrow-right-up-line absolute right-0 text-[22px]"></i>
+          </div>
+          <div
+            id="card"
+            class="card flex items-center border-t border-[#606060] pt-[7px]"
+          >
+            <h2 class="lg:text-[22px] text-[15px]">
+              How to Design An AI InterFace Users will <br />Trust in 2024?
+            </h2>
+            <img
+              class="h-[6vw] w-[6vw] rounded-[50%] absolute object-cover opacity-0"
+              src="https://assets-global.website-files.com/64a5e6675a4159253d0ee3e0/65c5011d306a52274ebea027_cover.webp"
+              alt=""
+            />
+            <p class="absolute right-8 lg:top-0 top-[31vh]   text-[14px] text-[#606060]">5 min ago</p>
+            <i class="ri-arrow-right-up-line absolute right-0 text-[22px]"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="page3 h-[30vh]  relative bg-[#111]">
+        <video
+          class="video absolute  scale-[0.0] rounded-[30px]"
+          src="https://lazarev.kiev.ua/la24/la-reel--min.mp4"
+        ></video>
+
+        <img class="image lg:px-0 rounded-[15px] px-[8px]" src="assets/bg.webp" alt="" />
+        <div class="group h-full w-full top-0 cursor-pointer">
+          <div
+            class="play lg:w-30 lg:h-30 h-[50px] w-[50px] bg-white absolute lg:top-100 top-[74px] left-[45vw] lg:right-178 rounded-full flex items-center justify-center shadow-lg transition-transform hover:scale-110"
+          >
+            <svg
+              class="lg:w-8 w-[18px] h-[18px] lg:h-8 text-black"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+            >
+              <path d="M4 4l12 6-12 6V4z" />
+            </svg>
+          </div>
+          <div
+            class="absolute top-140 right-178 mt-2 w-[140px] p-[10px] rounded-[20px] text-center text-black bg-white w- lg:opacity-0 opacity-100 group-hover:opacity-100  transition-opacity duration-300"
+          >
+            Show Reel
+          </div>
+        </div>
+      </div>
+      
+      <div class="pageex relative lg:flex hidden h-[100vh] lg:h-[100vh] w-[100%] bg-[#111]">
+        <h1 class="text-[30vw] font-bold absolute top-[50vh] lg:top-0 whitespace-nowrap text-white">LAZEREV BEST UL/UX DESIGNS WITH DEVELOPMENT</h1>
+      </div>
+
+      <div
+        class="page4 w-full flex flex-col  min-h-[100vh] pt-[17vh] lg:px-[11vh] px-[1vh]  py-[2vh] bg-white"
+      >
+        <div class="section1 flex lg:gap-0 gap-[20px] lg:flex-row flex-col w-full">
+          <div
+            class="left relative lg:w-[30%] w-[100%] lg:h-[70vh] gap-[10px] h-[25vh] text-center border-t flex lg:flex-col flex-col  justify-between border-black pl-[4vh] pt-[4vh] pr-[4vh] lg:text-[33px] text-[20px] text-black font-semibold"
+          >
+            <h2 class="text-[25px] lg:text-">Accren.Rhea </h2>
+            <i
+              class="ri-arrow-right-up-line text-[20px] absolute lg:right-[150px] right-[90px]"
+            ></i>
+            
+            <p class=" a text-[13px] lg:text-[20px] text-left">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Obcaecati voluptate a, atque odio labore culpa vel numquam
+              recusandae cum perspiciatis!
+            </p>
+          </div>
+          <div class="sec-right relative lg:h-0 h-[20vh] lg:w-[70%] w-[100%] pl-[4vh] pr-[4vh] pb-[60vh] lg:pb-0 lg:pt-[1vh]">
+            <img
+              class="image14 w-[100vw] lg:h-[55vh] lg:rounded-0 rounded-[15px]  h-[43vh] lg:object-cover object-fill lg:object-bottom-left"
+              src="assets/mainimg.jpg"
+              alt=""
+            />
+
+            <video
+              class="video14 absolute opacity-1 lg:scale-0 lg:rounded-0 rounded-[15px] left-[5px] lg:left-0 scale-[0.9] top-[-5vh] lg:top-0 h-[10vh]"
+              muted
+              src="/assets/2nd vid.mp4"
+            ></video>
+          </div>
+        </div>
+        
+        <div class="section1 flex lg:gap-0 gap-[20px] lg:flex-row flex-col w-full">
+          <div
+            class="left relative lg:w-[30%] w-[100%] lg:h-[70vh] h-[25vh] text-center border-t flex lg:flex-col flex-col  justify-between border-black pl-[4vh] pt-[4vh] pr-[4vh] lg:text-[33px] text-[20px] text-black font-semibold"
+          >
+            <h2>Accren.Rhea</h2>
+            <i
+              class="ri-arrow-right-up-line text-[20px] absolute right-[90px] lg:right-[150px]"
+            ></i>
+            <p class=" text-[13px] lg:text-[20px] text-left">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Obcaecati voluptate a, atque odio labore culpa vel numquam
+              recusandae cum perspiciatis!
+            </p>
+          </div>
+          <div class="sec-right relative lg:w-[70%] lg:h-0 h-[25vh] w-[100%] pl-[4vh] pr-[4vh] pb-[60vh] lg:pb-0 lg:pt-[1vh]">
+            <img
+              class="image24 w-[100vw] lg:h-[55vh] lg:rounded-0 rounded-[15px]  h-[43vh] object-fill lg:object-cover  object-position: center top lg:object-bottom-left"
+              src="assets/mainig2.jpg"
+              alt=""
+            />
+
+            <video
+              class="video24 absolute opacity-0 lg:rounded-0 rounded-[15px] lg:scale-0 left-[10px] lg:left-0 scale-[0.9] top-[-5vh] lg:top-0 h-[10vh]"
+              muted
+              src="/assets/pika-cover-small.mp4"
+            ></video>
+          </div>
+        </div>
+      </div>
+
+      <div class="page5  min-h-[150vh] bg-[#111] w-full pt-[2vw] overflow-visible px-[3vh]  lg:px-[11vh]  ">
+        <div class="section1 flex-col lg:flex-row border-t border-white pt-[3vw] h-full w-full flex">
+          <div class="left w-[30%] h-[10vh] lg:h-[150vh] p-[1vh] lg:p-[3vh]">
+            <button class="lg:px-[2.5vw] px-[10vw] lg:py-[1vw] rounded-[30px] w-[60vw] lg:w-[15vw] py-[1vh] bg-[#0BA34B] sticky top-[15%] ">Become a Client <i class="ri-arrow-right-up-line"></i> </button>
+          </div>
+          <div class="right w-full lg:w-[70%] h-[100vh] pt-0 lg:p-[3vh] text-[20px] lg:text-[30px] align-top">
+            <p class=" pb-[5vw]"><span class="lg:w-[15vw] w-[100vw] lg:pr-0 pr-[10px] lg:inline-block text-[13px] align-top">Sevices</span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore ut eius aperiam in, officiis ipsum nihil reprehenderit culpa porro eos, sunt itaque perferendis laboriosam fugit corporis neque? A, nemo et.</p>
+            <div class="container">
+           <details class="cursor-pointer">
+            <summary  class="list-none border-t border-white cursor-pointer">
+              <div class="right-content flex flex-col   pt-[20px]">
+              
+                <div class="div flex flex-col gap-[25px]">
+                <h1 class="font-bold text-[35px]">UI UX Design</h1>
+                <div class="ids flex text-[11px] lg:text-[13px] gap-[5px] pb-[25px]">
+                  <h4 class="p-[8px] font-semibold  rounded-[20px] border border-[#3d3d3d]">UX Audit</h4>
+                  <h4 class="p-[8px] font-semibold  rounded-[20px] border border-[#3d3d3d]">UI Design</h4>
+                  <h4 class="p-[8px] font-semibold  rounded-[20px] border border-[#3d3d3d]">UX Design</h4>
+                  <h4 class="p-[8px] font-semibold  rounded-[20px] border border-[#3d3d3d]">UI Research</h4>
+                </div>
+              </div>
+            </summary>
+            <div class="contain ">
+              <div   class="divs   pt-[2vw] pb-[3vw] p-[1vw] border-t border-[#5e5e5e]  flex justify-between">
+                <h2>UX Research</h2>
+                <p class="text-[15px] w-[60%]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel cumque possimus quisquam atque necessitatibus repudiandae, fugit vitae cum dolore eius? Optio quod debitis voluptates, tempore quidem cupiditate magni? Magni, a.</p>
+                <i class="ri-arrow-right-up-line"></i> 
+              </div>
+              <div class="divs  pt-[3vw] pb-[3vw] p-[1vw] lg:flex border-t border-[#2b2b2b]  hidden justify-between">
+                <h2>UX Research</h2>
+                <p class="text-[15px] w-[60%]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel cumque possimus quisquam atque necessitatibus repudiandae, fugit vitae cum dolore eius? Optio quod debitis voluptates, tempore quidem cupiditate magni? Magni, a.</p>
+                <i class="ri-arrow-right-up-line"></i> 
+              </div>
+              
+            </div> 
+            </div>
+           </details>
+           <details class="cursor-pointer">
+            <summary  class="list-none border-t border-white cursor-pointer">
+              <div class="right-content flex flex-col  pt-[20px]">
+                <div class="div flex flex-col gap-[25px]">
+                <h1 class="font-bold text-[35px]">Project Learning</h1>
+                <div class="ids flex text-[11px] lg:text-[13px] gap-[5px] pb-[25px]">
+                  <h4 class="p-[8px] font-semibold  rounded-[20px] border border-[#3d3d3d]">UX Audit</h4>
+                  <h4 class="p-[8px] font-semibold  rounded-[20px] border border-[#3d3d3d]">UI Design</h4>
+                  <h4 class="p-[8px] font-semibold  rounded-[20px] border border-[#3d3d3d]">UX Design</h4>
+                  <h4 class="p-[8px] font-semibold  rounded-[20px] border border-[#3d3d3d]">UI Research</h4>
+                </div>
+              </div>
+            </summary>
+            
+              <div   class="divs  pt-[2vw] pb-[3vw] p-[1vw] border-t border-[#5e5e5e]  flex justify-between">
+                <h2>UX Research</h2>
+                <p class="text-[15px] w-[60%]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel cumque possimus quisquam atque necessitatibus repudiandae, fugit vitae cum dolore eius? Optio quod debitis voluptates, tempore quidem cupiditate magni? Magni, a.</p>
+                <i class="ri-arrow-right-up-line"></i> 
+              </div>
+              <div class="divs pt-[3vw] pb-[3vw] p-[1vw] border-t border-[#2b2b2b] hidden lg:flex justify-between">
+                <h2>UX Research</h2>
+                <p class="text-[15px] w-[60%]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel cumque possimus quisquam atque necessitatibus repudiandae, fugit vitae cum dolore eius? Optio quod debitis voluptates, tempore quidem cupiditate magni? Magni, a.</p>
+                <i class="ri-arrow-right-up-line"></i> 
+              </div>
+              
+               
+           </details>
+            
+            
+            
+          </div>
+        </div>
+        </div>
+
+        <div class="page6 min-h-[150vh] w-[100%] bg-white p-[3vh] lg:p-[13vh] relative ">
+          <h1 class="h-[30vh] w-[100%] text-black  flex items-center justify-center text-[30px] lg:text-[80px] font-bold pl-[5vw] lg:pl-[35vw] border-b border-[#111] pb-[1vh] lg:pb-[4vh] ">DIGITAL PRODUCT DESIGN PROCESS</h1>
+         <div class="cont flex gap-[10px] flex-row lg:flex-col">
+          <div class="p6content py-[2vh] lg:py-0 lg:p-[8vh] text-black h-[5vh] w-[50%]">
+            <h4 class="bg-green-500 rounded-[4vh]  px-[4vh] h-[7vh] flex justify-between items-center py-[10px] w-[30vh] text-[14px] lg:text-[17px] font-semi  bold">See all Case Studies <i class="ri-arrow-right-up-line scale-[1.09]"></i></h4>
+          </div>
+          <div class="content  w-[90%] lg:w-[50%] absolute lg:right-5 right- lg:pr-[13vh] text-black py-[14vh] lg:py-[8vh] ">
+              <p class=" text-[14px] lg:text-[20px] mb-[4vh]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis magnam veniam dolore, harum alias optio? Ab fugiat temporibus quo debitis autem at minima? Sit molestiae quam id vero facere blanditiis voluptatem totam culpa amet doloribus corrupti obcaecati, quasi, quaerat deleniti.</p>
+              <p class=" text-[14px] lg:text-[20px]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aliquam tempore nulla neque optio doloremque earum animi sunt quisquam nihil.</p>
+            
+          </div>
+          
+        </div> 
+        <div class="btm h-[60vh] w-[80%] bg-white absolute bottom-5 flex border-t border-[#dadada] ">
+          <div class="btm-1 lg:flex hidden h-[50vh] w-[20%] text-black  border-r border-[#dadada]"></div>
+          <div class="btm-2 h-[50vh] w-[70%] lg:w-[25%] flex flex-col gap-[10px]  text-black border-r border-[#dadada]">
+            <h2>Product Strategy</h2>
+            <h4  class="bg-[#111] pl-0 px-[10px] pr-[8px] transform lg:text-[20px] text-[13px] translate-x-[10%]  text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">1</span>Strategy Workshop</h4>
+            <h4  class="bg-[#111] pl-0 px-[10px] transform lg:text-[20px] text-[13px] translate-x-[20%] text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">2</span>Ideal Validation</h4>
+            <h4  class="bg-[#111] pl-0 px-[10px] transform lg:text-[20px] text-[13px] translate-x-[30%] text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">3</span>Market Research</h4>
+            <h4  class="bg-[#111] pl-0 px-[10px] transform lg:text-[20px] text-[13px] translate-x-[40%] text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">4</span>Product Positioning</h4>
+            <h4  class="bg-[#111] pl-0 px-[10px] transform lg:text-[20px] text-[13px] translate-x-[50%] text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">5</span>Ux Research</h4>
+            <h4  class="bg-[#111] pl-0 px-[10px] transform hidden lg:flex lg:text-[20px] text-[13px] translate-x-[60%] text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">6</span>Functional Department</h4>
+          </div>
+          <div class="btm-3 h-[50vh] w-[25%] hidden lg:flex flex-col gap-[10px]  border-r border-[#dadada]">
+            <h2>Product Strategy</h2>
+            <h4 class="bg-[#111] pl-0 px-[10px] pr-[8px] transform lg:text-[20px] text-[13px] translate-x-[10%]  text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">1</span>Strategy Workshop</h4>
+            <h4 class="bg-[#111] pl-0 px-[10px] transform lg:text-[20px] text-[13px] translate-x-[20%] text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">2</span>Ideal Validation</h4>
+            <h4  class="bg-[#111] pl-0 px-[10px] transform lg:text-[20px] text-[13px] translate-x-[30%] text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">5</span>Ux Research</h4>
+            <h4  class="bg-[#111] pl-0 px-[10px] transform lg:text-[20px] text-[13px] translate-x-[40%] text-white py-[10px] mx-[10px] rounded-[30px] "><span class="bg-[#383838] mx-[10px] px-[10px] rounded-[50%] p-[4px] ">6</span>Functional Department</h4>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="page7 h-[100vh] w-[100%] bg-[#111]"></div>
+
+      </div>
+      
+
+      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.7/gsap.min.js"
+      integrity="sha512-f6bQMg6nkSRw/xfHw5BCbISe/dJjXrVGfz9BSDwhZtiErHwk7ifbmBEtF9vFW8UNIQPhV2uEFVyI/UHob9r7Cw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
